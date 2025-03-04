@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Basic Calculator"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+    <!-- Num1 Input Field -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Num1"
+            android:textSize="18sp"
+            android:layout_marginEnd="10dp" />
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter first number"
+            android:inputType="numberDecimal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <!-- Num2 Input Field -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Num2"
+            android:textSize="18sp"
+            android:layout_marginEnd="10dp" />
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter second number"
+            android:inputType="numberDecimal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <!-- Operation Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/subButton"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/mulButton"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/divButton"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:text="/" />
+    </LinearLayout>
+
+    <!-- Answer Button and Result -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/ansButton"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="Ans" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result: "
+            android:textSize="18sp"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+
+    <!-- Full Calculator Button -->
+    <Button
+        android:id="@+id/fullCalcButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Full Calculator" />
+
+</LinearLayout>
